@@ -23,7 +23,7 @@ AfterMax provides a pipeline directly from Adobe After Effects to Greensock Twee
 * Run export script
 * Choose a filename
 * Resolve DOM dependencies
-	* Name your elements to match the 
+	* Name your elements to match the
 	* Make sure the container has CSS perspective turned on.
 	* Include the TweenMax library
 		* Either download from: https://github.com/greensock/GreenSock-JS/
@@ -39,10 +39,17 @@ It's what I'm most familiar with.  Would love to see things forked to other libr
 **
 One dependency @ ~100k supports all of our animation needs.
 TweenMax cleanly animates CSS properties in a very readable, simple format.
-  
+
 **Why doesn't this work w/ After Effects < CC?
 **
 Adobe changed up the ExtendScript format creating incompatibilities for earlier versions.
+
+**How buggy is this?
+**
+There are only six bugs, but they're pretty much all-encompassing.
+
+
+
 
 
 ## Version History
