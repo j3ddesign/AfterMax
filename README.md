@@ -16,6 +16,15 @@ AfterMax provides a pipeline directly from Adobe After Effects to Greensock Twee
 * [GreenSock TimelineMax](http://greensock.com/timelinemax)
 * [JSON2](https://github.com/douglascrockford/JSON-js)
 
+## Capabilities
+AfterMax can record the following properties:
+
+* Position (x,y,z)
+* Opacity
+* Scale (x,y,z)
+* Rotation (x,y,z)
+* Transform Origin
+
 ## Usage
 
 * Create your After Effects document.
@@ -31,21 +40,17 @@ AfterMax provides a pipeline directly from Adobe After Effects to Greensock Twee
 
 ## Questions
 
-**Why TweenMax / TimelineMax? Why not (TweenLite / TimelineLite / 3rd Party tweening library)?
-**
+**Why TweenMax / TimelineMax? Why not (TweenLite / TimelineLite / 3rd Party tweening library)?**
 It's what I'm most familiar with.  Would love to see things forked to other libraries.
 
-**Why the Max versions of the libraries?
-**
+**Why the Max versions of the libraries?**
 One dependency @ ~100k supports all of our animation needs.
 TweenMax cleanly animates CSS properties in a very readable, simple format.
 
-**Why doesn't this work w/ After Effects < CC?
-**
+**Why doesn't this work w/ After Effects < CC?**
 Adobe changed up the ExtendScript format creating incompatibilities for earlier versions.
 
-**How buggy is this?
-**
+**How buggy is this?**
 There are only six bugs, but they're pretty much all-encompassing.
 
 
@@ -54,6 +59,7 @@ There are only six bugs, but they're pretty much all-encompassing.
 
 ## Version History
 
-* 1.0 - Initial commit
+* **1.0** - Initial commit
+* **1.0.1** - Bug fixes / addition of example code 
 
 

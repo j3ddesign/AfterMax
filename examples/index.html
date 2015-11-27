@@ -29,7 +29,7 @@
 
 
       #animation-holder {
-        background:#FCFAFA;
+        background:none;
         border:1px solid #CCC;
         perspective:900px;
         perspective-origin: 50% 50%;
@@ -47,7 +47,6 @@
         position:absolute;
         backface-visibility:hidden;
         visibility:visible;
-        border:1px solid #999;
 
       }
       .black {
@@ -70,35 +69,31 @@
           <div class='box black' id='box-4'></div>
         </div>
   </div>
-
-
 </div>
 
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
- <!--  <script type="text/javascript" src="/CommandDecor/app/scripts/gsap/TweenMax.min.js"></script>
-  <script type="text/javascript" src="/shit/bower_components/jquery/dist/jquery.min.js"></script>
- -->
+
   <script type="text/javascript" src="animation.js"></script>
   <script type="text/javascript">
     function onKeyPress(e) {
-     switch(e.keyCode) {
-      case 39:
-      //right
-      tl.pause();
-      tl.progress(tl.progress() + 0.005);
+       switch(e.keyCode) {
+        case 39:
+        //right
+        tl.pause();
+        tl.progress(tl.progress() + 0.005);
 
-      break;
-      case 37:
-      //left
-            tl.pause();
+        break;
+        case 37:
+        //left
+              tl.pause();
 
-      tl.progress(tl.progress() - 0.005);
-      break;
-     }
-     console.log(tl.time());
-  }
+        tl.progress(tl.progress() - 0.005);
+        break;
+       }
+       console.log(tl.time());
+    }
     $(function() {
       $(window).keydown(onKeyPress);
       //tl.timeScale(.3);
