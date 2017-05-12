@@ -45,6 +45,53 @@
         width:100px;
         height:100px;
         position:absolute;
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie ie6" lang="en"><![endif]-->
+<!--[if IE 7]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+
+    <title>AfterMax demos</title>
+
+    <!-- Base meta //-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <style>
+
+      html,body {
+        font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        padding:0;
+        margin:0;
+      }
+
+      div.content {
+        width:1000px;
+        margin:0 auto;
+
+      }
+
+
+      #animation-holder {
+        background:none;
+        border:1px solid #CCC;
+        perspective:900px;
+        perspective-origin: 50% 50%;
+        width:800px;
+        height:600px;
+        margin:0 auto;
+        transform-style: preserve-3d;
+      }
+      .box {
+
+        background-color:#FF0000;
+        display:block;
+        width:100px;
+        height:100px;
+        position:absolute;
         backface-visibility:hidden;
         visibility:visible;
 
@@ -58,7 +105,7 @@
 
   </head>
 <body>
-<a href="https://github.com/Meandmybadself/AfterMax"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+<a href="https://github.com/j3ddesign/AfterMax"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
 <div class='content'>
   <div class='content-area'>
     <h1>AfterMax </h1>
@@ -73,9 +120,9 @@
 
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
 
-  <script type="text/javascript" src="animation.js"></script>
+  <script type="text/javascript" src="test2.js"></script>
   <script type="text/javascript">
     function onKeyPress(e) {
        switch(e.keyCode) {
@@ -94,8 +141,9 @@
        }
        console.log(tl.time());
     }
-    $(function() {
-      $(window).keydown(onKeyPress);
+
+    document.addEventListener("DOMContentLoaded", function() {
+      window.addEventListener('keydown', onKeyPress);
       //tl.timeScale(.3);
       //tl.progress(.55);
       tl.play();
@@ -103,3 +151,4 @@
   </script>
 </body>
 </html>
+
